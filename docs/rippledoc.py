@@ -21,8 +21,8 @@ import os, os.path, sys, subprocess, io, re, shutil
 
 VERSION = "2018-08-15"
 
-project_name = "Rippledoc and Local Search Test"
-copyright_info = "Copyright to the original creators. I just brought it together"
+project_name = None
+copyright_info = None
 
 dirs_to_skip = ["search.html"]
 fnm_to_doc_title = {}
@@ -383,7 +383,6 @@ def pandoc_process_file(md_fnm):
     depth = md_fnm.count('/') - 1
     pandoc_cmd.append('--css=' + '../' * depth + 'styles.css')
     pandoc_cmd.extend(['-B', '/tmp/before.html', '-A', '/tmp/after.html'])
-    pandoc_cmd.extend(['-H', 'header.html'])
     pandoc_cmd.extend(['-o', html_fnm])
     subprocess.check_call(pandoc_cmd)
 
@@ -671,10 +670,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h3, h5 {
     font-style: italic;
-}
-.right{
-float:right;
-text-align:right;
 }
 """
 
