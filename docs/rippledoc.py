@@ -359,6 +359,7 @@ def pandoc_process_file(md_fnm):
     depth = md_fnm.count('/') - 1
 
     html_bef = html_before.replace('{{path-to-index}}', '../' * depth + 'index.html')
+    html_bef = html_before.replace('{{path-to-search}}', '../' * depth + 'search.html')
     html_bef = html_bef.replace('{{project-name}}', project_name)
 
     nav_box_content = get_nav_box_content(md_fnm)
@@ -469,6 +470,10 @@ html_before = """
 
 <div id="my-header">
   <a href="{{path-to-index}}">{{project-name}}</a>
+</div>
+
+<div id="nav">
+  <a href="{{path-to-search}}">Search</a>
 </div>
 
 <div id="trunk-box">
@@ -670,6 +675,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h3, h5 {
     font-style: italic;
+}
+
+.right{
+
 }
 """
 
