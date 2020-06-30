@@ -15,3 +15,4 @@ Every time a new file is added or changed the index must be rebuilt.
 
 * https://gitlab.com/uvtc/rippledoc
 * https://github.com/BLE-LTER/Lunr-Index-and-Search-for-Static-Sites
+
