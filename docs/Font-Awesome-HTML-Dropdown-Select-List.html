@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>HTML Dropdown Select</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <nav class="right">
+      <ul>
+          <li style="display: inline;"><a href="search.html">Search</a></li>
+      </ul>
+    </nav>
+</head>
+<body>
+
+<div id="main-outer-box">
+
+<div id="my-header">
+  <a href="index.html">Welcome to the Font-Awesome wiki!</a>
+</div>
+
+<div id="trunk-box">
+
+<div id="nav-box">
+<p>Contents:</p>
+<ul>
+<li><a href="Extending-File-Type-icons-to-use-in-programming.html">Extending File Type icons</a></li>
+<li><a href="Troubleshooting.html">Troubleshooting</a></li>
+<li><a href="Upgrading-from-3.2.1-to-4.html">Upgrading from 3.2.1 to 4</a></li>
+<li><a href="Customize-Font-Awesome.html">Customize Font Awesome</a></li>
+<li><strong>HTML Dropdown Select</strong></li>
+<li><a href="Merge-FontAwesome-with-any-other-font.html">Merge Font Awesome with another font</a></li>
+<li><a href="Layering-and-Masking-snippets.html">Layering and Masking</a></li>
+<li><a href="Bootstrap-Caveats.html">Boostrap Caveats</a></li>
+</ul>
+
+</div>
+
+<div id="article-box">
+
+<div id="header-nav-bar">
+<div><a href="Customize-Font-Awesome.html">←prev</a></div><div class="nav-bar-push"><a href="Merge-FontAwesome-with-any-other-font.html">next→</a></div>
+</div>
+
+<div id="article-content">
+<header id="title-block-header">
+<h1 class="title">HTML Dropdown Select</h1>
+</header>
+<p>List below is way depracated. In order to manage to display FA V.4 in an HTML Select, you have to use http://silviomoreto.github.io/bootstrap-select/</p>
+<p><a href="http://mjolnic.com/fontawesome-iconpicker/">FontAwesome Icon Picker</a></p>
+<p>This plugin allows you to use data-content attribute to display the icons. Example: <code>$x = array( 'fa-arrows-v' =&gt; array('data-content' =&gt; "&lt;i class='fa fa-arrows-v'&gt;&lt;/i&gt;", 'value' =&gt; 'fa-arrows-v', 'name' =&gt; 'fa-arrows-v'), 'fa-beer' =&gt; array('data-content' =&gt; "&lt;i class='fa fa-beer'&gt;&lt;/i&gt;", 'value' =&gt; 'fa-beer', 'name' =&gt; 'fa-beer'), );</code></p>
+<p>Populate your select with this array’s format.</p>
+<hr />
+<pre><code>&lt;select class=&quot;btn btn-sieltec-primary&quot;&gt;
+  &lt;optgroup label=&quot;Web Application Icons&quot;&gt;
+    &lt;option value=&quot;icon-adjust&quot;&gt;icon-adjust&lt;/option&gt;
+    &lt;option value=&quot;icon-asterisk&quot;&gt;icon-asterisk&lt;/option&gt;
+    &lt;option value=&quot;icon-ban-circle&quot;&gt;icon-ban-circle&lt;/option&gt;
+    &lt;option value=&quot;icon-bar-chart&quot;&gt;icon-bar-chart&lt;/option&gt;
+    &lt;option value=&quot;icon-barcode&quot;&gt;icon-barcode&lt;/option&gt;
+    &lt;option value=&quot;icon-beaker&quot;&gt;icon-beaker&lt;/option&gt;
+    &lt;option value=&quot;icon-beer&quot;&gt;icon-beer&lt;/option&gt;
+    &lt;option value=&quot;icon-bell&quot;&gt;icon-bell&lt;/option&gt;
+    &lt;option value=&quot;icon-bell-alt&quot;&gt;icon-bell-alt&lt;/option&gt;
+    &lt;option value=&quot;icon-bolt&quot;&gt;icon-bolt&lt;/option&gt;
+    &lt;option value=&quot;icon-book&quot;&gt;icon-book&lt;/option&gt;
+    &lt;option value=&quot;icon-bookmark&quot;&gt;icon-bookmark&lt;/option&gt;
+    &lt;option value=&quot;icon-bookmark-empty&quot;&gt;icon-bookmark-empty&lt;/option&gt;
+    &lt;option value=&quot;icon-briefcase&quot;&gt;icon-briefcase&lt;/option&gt;
+    &lt;option value=&quot;icon-bullhorn&quot;&gt;icon-bullhorn&lt;/option&gt;
+    &lt;option value=&quot;icon-calendar&quot;&gt;icon-calendar&lt;/option&gt;
+    &lt;option value=&quot;icon-camera&quot;&gt;icon-camera&lt;/option&gt;
+    &lt;option value=&quot;icon-camera-retro&quot;&gt;icon-camera-retro&lt;/option&gt;
+    &lt;option value=&quot;icon-certificate&quot;&gt;icon-certificate&lt;/option&gt;
+    &lt;option value=&quot;icon-check&quot;&gt;icon-check&lt;/option&gt;
+    &lt;option value=&quot;icon-check-empty&quot;&gt;icon-check-empty&lt;/option&gt;
+    &lt;option value=&quot;icon-circle&quot;&gt;icon-circle&lt;/option&gt;
+    &lt;option value=&quot;icon-circle-blank&quot;&gt;icon-circle-blank&lt;/option&gt;
+    &lt;option value=&quot;icon-cloud&quot;&gt;icon-cloud&lt;/option&gt;
+    &lt;option value=&quot;icon-cloud-download&quot;&gt;icon-cloud-download&lt;/option&gt;
+    &lt;option value=&quot;icon-cloud-upload&quot;&gt;icon-cloud-upload&lt;/option&gt;
+    &lt;option value=&quot;icon-coffee&quot;&gt;icon-coffee&lt;/option&gt;
+    &lt;option value=&quot;icon-cog&quot;&gt;icon-cog&lt;/option&gt;
+    &lt;option value=&quot;icon-cogs&quot;&gt;icon-cogs&lt;/option&gt;
+    &lt;option value=&quot;icon-comment&quot;&gt;icon-comment&lt;/option&gt;
+    &lt;option value=&quot;icon-comment-alt&quot;&gt;icon-comment-alt&lt;/option&gt;
+    &lt;option value=&quot;icon-comments&quot;&gt;icon-comments&lt;/option&gt;
+    &lt;option value=&quot;icon-comments-alt&quot;&gt;icon-comments-alt&lt;/option&gt;
+    &lt;option value=&quot;icon-credit-card&quot;&gt;icon-credit-card&lt;/option&gt;
+    &lt;option value=&quot;icon-dashboard&quot;&gt;icon-dashboard&lt;/option&gt;
+    &lt;option value=&quot;icon-desktop&quot;&gt;icon-desktop&lt;/option&gt;
+    &lt;option value=&quot;icon-download&quot;&gt;icon-download&lt;/option&gt;
+    &lt;option value=&quot;icon-download-alt&quot;&gt;icon-download-alt&lt;/option&gt;
+    &lt;option value=&quot;icon-edit&quot;&gt;icon-edit&lt;/option&gt;
+    &lt;option value=&quot;icon-envelope&quot;&gt;icon-envelope&lt;/option&gt;
+    &lt;option value=&quot;icon-envelope-alt&quot;&gt;icon-envelope-alt&lt;/option&gt;
+    &lt;option value=&quot;icon-exchange&quot;&gt;icon-exchange&lt;/option&gt;
+    &lt;option value=&quot;icon-exclamation-sign&quot;&gt;icon-exclamation-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-external-link&quot;&gt;icon-external-link&lt;/option&gt;
+    &lt;option value=&quot;icon-eye-close&quot;&gt;icon-eye-close&lt;/option&gt;
+    &lt;option value=&quot;icon-eye-open&quot;&gt;icon-eye-open&lt;/option&gt;
+    &lt;option value=&quot;icon-facetime-video&quot;&gt;icon-facetime-video&lt;/option&gt;
+    &lt;option value=&quot;icon-fighter-jet&quot;&gt;icon-fighter-jet&lt;/option&gt;
+    &lt;option value=&quot;icon-film&quot;&gt;icon-film&lt;/option&gt;
+    &lt;option value=&quot;icon-filter&quot;&gt;icon-filter&lt;/option&gt;
+    &lt;option value=&quot;icon-fire&quot;&gt;icon-fire&lt;/option&gt;
+    &lt;option value=&quot;icon-flag&quot;&gt;icon-flag&lt;/option&gt;
+    &lt;option value=&quot;icon-folder-close&quot;&gt;icon-folder-close&lt;/option&gt;
+    &lt;option value=&quot;icon-folder-open&quot;&gt;icon-folder-open&lt;/option&gt;
+    &lt;option value=&quot;icon-folder-close-alt&quot;&gt;icon-folder-close-alt&lt;/option&gt;
+    &lt;option value=&quot;icon-folder-open-alt&quot;&gt;icon-folder-open-alt&lt;/option&gt;
+    &lt;option value=&quot;icon-food&quot;&gt;icon-food&lt;/option&gt;
+    &lt;option value=&quot;icon-gift&quot;&gt;icon-gift&lt;/option&gt;
+    &lt;option value=&quot;icon-glass&quot;&gt;icon-glass&lt;/option&gt;
+    &lt;option value=&quot;icon-globe&quot;&gt;icon-globe&lt;/option&gt;
+    &lt;option value=&quot;icon-group&quot;&gt;icon-group&lt;/option&gt;
+    &lt;option value=&quot;icon-hdd&quot;&gt;icon-hdd&lt;/option&gt;
+    &lt;option value=&quot;icon-headphones&quot;&gt;icon-headphones&lt;/option&gt;
+    &lt;option value=&quot;icon-heart&quot;&gt;icon-heart&lt;/option&gt;
+    &lt;option value=&quot;icon-heart-empty&quot;&gt;icon-heart-empty&lt;/option&gt;
+    &lt;option value=&quot;icon-home&quot;&gt;icon-home&lt;/option&gt;
+    &lt;option value=&quot;icon-inbox&quot;&gt;icon-inbox&lt;/option&gt;
+    &lt;option value=&quot;icon-info-sign&quot;&gt;icon-info-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-key&quot;&gt;icon-key&lt;/option&gt;
+    &lt;option value=&quot;icon-leaf&quot;&gt;icon-leaf&lt;/option&gt;
+    &lt;option value=&quot;icon-laptop&quot;&gt;icon-laptop&lt;/option&gt;
+    &lt;option value=&quot;icon-legal&quot;&gt;icon-legal&lt;/option&gt;
+    &lt;option value=&quot;icon-lemon&quot;&gt;icon-lemon&lt;/option&gt;
+    &lt;option value=&quot;icon-lightbulb&quot;&gt;icon-lightbulb&lt;/option&gt;
+    &lt;option value=&quot;icon-lock&quot;&gt;icon-lock&lt;/option&gt;
+    &lt;option value=&quot;icon-unlock&quot;&gt;icon-unlock&lt;/option&gt;
+    &lt;option value=&quot;icon-magic&quot;&gt;icon-magic&lt;/option&gt;
+    &lt;option value=&quot;icon-magnet&quot;&gt;icon-magnet&lt;/option&gt;
+    &lt;option value=&quot;icon-map-marker&quot;&gt;icon-map-marker&lt;/option&gt;
+    &lt;option value=&quot;icon-minus&quot;&gt;icon-minus&lt;/option&gt;
+    &lt;option value=&quot;icon-minus-sign&quot;&gt;icon-minus-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-mobile-phone&quot;&gt;icon-mobile-phone&lt;/option&gt;
+    &lt;option value=&quot;icon-money&quot;&gt;icon-money&lt;/option&gt;
+    &lt;option value=&quot;icon-move&quot;&gt;icon-move&lt;/option&gt;
+    &lt;option value=&quot;icon-music&quot;&gt;icon-music&lt;/option&gt;
+    &lt;option value=&quot;icon-off&quot;&gt;icon-off&lt;/option&gt;
+    &lt;option value=&quot;icon-ok&quot;&gt;icon-ok&lt;/option&gt;
+    &lt;option value=&quot;icon-ok-circle&quot;&gt;icon-ok-circle&lt;/option&gt;
+    &lt;option value=&quot;icon-ok-sign&quot;&gt;icon-ok-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-pencil&quot;&gt;icon-pencil&lt;/option&gt;
+    &lt;option value=&quot;icon-picture&quot;&gt;icon-picture&lt;/option&gt;
+    &lt;option value=&quot;icon-plane&quot;&gt;icon-plane&lt;/option&gt;
+    &lt;option value=&quot;icon-plus&quot;&gt;icon-plus&lt;/option&gt;
+    &lt;option value=&quot;icon-plus-sign&quot;&gt;icon-plus-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-print&quot;&gt;icon-print&lt;/option&gt;
+    &lt;option value=&quot;icon-pushpin&quot;&gt;icon-pushpin&lt;/option&gt;
+    &lt;option value=&quot;icon-qrcode&quot;&gt;icon-qrcode&lt;/option&gt;
+    &lt;option value=&quot;icon-question-sign&quot;&gt;icon-question-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-quote-left&quot;&gt;icon-quote-left&lt;/option&gt;
+    &lt;option value=&quot;icon-quote-right&quot;&gt;icon-quote-right&lt;/option&gt;
+    &lt;option value=&quot;icon-random&quot;&gt;icon-random&lt;/option&gt;
+    &lt;option value=&quot;icon-refresh&quot;&gt;icon-refresh&lt;/option&gt;
+    &lt;option value=&quot;icon-remove&quot;&gt;icon-remove&lt;/option&gt;
+    &lt;option value=&quot;icon-remove-circle&quot;&gt;icon-remove-circle&lt;/option&gt;
+    &lt;option value=&quot;icon-remove-sign&quot;&gt;icon-remove-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-reorder&quot;&gt;icon-reorder&lt;/option&gt;
+    &lt;option value=&quot;icon-reply&quot;&gt;icon-reply&lt;/option&gt;
+    &lt;option value=&quot;icon-resize-horizontal&quot;&gt;icon-resize-horizontal&lt;/option&gt;
+    &lt;option value=&quot;icon-resize-vertical&quot;&gt;icon-resize-vertical&lt;/option&gt;
+    &lt;option value=&quot;icon-retweet&quot;&gt;icon-retweet&lt;/option&gt;
+    &lt;option value=&quot;icon-road&quot;&gt;icon-road&lt;/option&gt;
+    &lt;option value=&quot;icon-rss&quot;&gt;icon-rss&lt;/option&gt;
+    &lt;option value=&quot;icon-screenshot&quot;&gt;icon-screenshot&lt;/option&gt;
+    &lt;option value=&quot;icon-search&quot;&gt;icon-search&lt;/option&gt;
+    &lt;option value=&quot;icon-share&quot;&gt;icon-share&lt;/option&gt;
+    &lt;option value=&quot;icon-share-alt&quot;&gt;icon-share-alt&lt;/option&gt;
+    &lt;option value=&quot;icon-shopping-cart&quot;&gt;icon-shopping-cart&lt;/option&gt;
+    &lt;option value=&quot;icon-signal&quot;&gt;icon-signal&lt;/option&gt;
+    &lt;option value=&quot;icon-signin&quot;&gt;icon-signin&lt;/option&gt;
+    &lt;option value=&quot;icon-signout&quot;&gt;icon-signout&lt;/option&gt;
+    &lt;option value=&quot;icon-sitemap&quot;&gt;icon-sitemap&lt;/option&gt;
+    &lt;option value=&quot;icon-sort&quot;&gt;icon-sort&lt;/option&gt;
+    &lt;option value=&quot;icon-sort-down&quot;&gt;icon-sort-down&lt;/option&gt;
+    &lt;option value=&quot;icon-sort-up&quot;&gt;icon-sort-up&lt;/option&gt;
+    &lt;option value=&quot;icon-spinner&quot;&gt;icon-spinner&lt;/option&gt;
+    &lt;option value=&quot;icon-star&quot;&gt;icon-star&lt;/option&gt;
+    &lt;option value=&quot;icon-star-empty&quot;&gt;icon-star-empty&lt;/option&gt;
+    &lt;option value=&quot;icon-star-half&quot;&gt;icon-star-half&lt;/option&gt;
+    &lt;option value=&quot;icon-tablet&quot;&gt;icon-tablet&lt;/option&gt;
+    &lt;option value=&quot;icon-tag&quot;&gt;icon-tag&lt;/option&gt;
+    &lt;option value=&quot;icon-tags&quot;&gt;icon-tags&lt;/option&gt;
+    &lt;option value=&quot;icon-tasks&quot;&gt;icon-tasks&lt;/option&gt;
+    &lt;option value=&quot;icon-thumbs-down&quot;&gt;icon-thumbs-down&lt;/option&gt;
+    &lt;option value=&quot;icon-thumbs-up&quot;&gt;icon-thumbs-up&lt;/option&gt;
+    &lt;option value=&quot;icon-time&quot;&gt;icon-time&lt;/option&gt;
+    &lt;option value=&quot;icon-tint&quot;&gt;icon-tint&lt;/option&gt;
+    &lt;option value=&quot;icon-trash&quot;&gt;icon-trash&lt;/option&gt;
+    &lt;option value=&quot;icon-trophy&quot;&gt;icon-trophy&lt;/option&gt;
+    &lt;option value=&quot;icon-truck&quot;&gt;icon-truck&lt;/option&gt;
+    &lt;option value=&quot;icon-umbrella&quot;&gt;icon-umbrella&lt;/option&gt;
+    &lt;option value=&quot;icon-upload&quot;&gt;icon-upload&lt;/option&gt;
+    &lt;option value=&quot;icon-upload-alt&quot;&gt;icon-upload-alt&lt;/option&gt;
+    &lt;option value=&quot;icon-user&quot;&gt;icon-user&lt;/option&gt;
+    &lt;option value=&quot;icon-user-md&quot;&gt;icon-user-md&lt;/option&gt;
+    &lt;option value=&quot;icon-volume-off&quot;&gt;icon-volume-off&lt;/option&gt;
+    &lt;option value=&quot;icon-volume-down&quot;&gt;icon-volume-down&lt;/option&gt;
+    &lt;option value=&quot;icon-volume-up&quot;&gt;icon-volume-up&lt;/option&gt;
+    &lt;option value=&quot;icon-warning-sign&quot;&gt;icon-warning-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-wrench&quot;&gt;icon-wrench&lt;/option&gt;
+    &lt;option value=&quot;icon-zoom-in&quot;&gt;icon-zoom-in&lt;/option&gt;
+    &lt;option value=&quot;icon-zoom-out&quot;&gt;icon-zoom-out&lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label=&quot;Text Editor Icons&quot;&gt;
+    &lt;option value=&quot;icon-file&quot;&gt;icon-file&lt;/option&gt;
+    &lt;option value=&quot;icon-file-alt&quot;&gt;icon-file-alt&lt;/option&gt;
+    &lt;option value=&quot;icon-cut&quot;&gt;icon-cut&lt;/option&gt;
+    &lt;option value=&quot;icon-copy&quot;&gt;icon-copy&lt;/option&gt;
+    &lt;option value=&quot;icon-paste&quot;&gt;icon-paste&lt;/option&gt;
+    &lt;option value=&quot;icon-save&quot;&gt;icon-save&lt;/option&gt;
+    &lt;option value=&quot;icon-undo&quot;&gt;icon-undo&lt;/option&gt;
+    &lt;option value=&quot;icon-repeat&quot;&gt;icon-repeat&lt;/option&gt;
+    &lt;option value=&quot;icon-text-height&quot;&gt;icon-text-height&lt;/option&gt;
+    &lt;option value=&quot;icon-text-width&quot;&gt;icon-text-width&lt;/option&gt;
+    &lt;option value=&quot;icon-align-left&quot;&gt;icon-align-left&lt;/option&gt;
+    &lt;option value=&quot;icon-align-center&quot;&gt;icon-align-center&lt;/option&gt;
+    &lt;option value=&quot;icon-align-right&quot;&gt;icon-align-right&lt;/option&gt;
+    &lt;option value=&quot;icon-align-justify&quot;&gt;icon-align-justify&lt;/option&gt;
+    &lt;option value=&quot;icon-indent-left&quot;&gt;icon-indent-left&lt;/option&gt;
+    &lt;option value=&quot;icon-indent-right&quot;&gt;icon-indent-right&lt;/option&gt;
+    &lt;option value=&quot;icon-font&quot;&gt;icon-font&lt;/option&gt;
+    &lt;option value=&quot;icon-bold&quot;&gt;icon-bold&lt;/option&gt;
+    &lt;option value=&quot;icon-italic&quot;&gt;icon-italic&lt;/option&gt;
+    &lt;option value=&quot;icon-strikethrough&quot;&gt;icon-strikethrough&lt;/option&gt;
+    &lt;option value=&quot;icon-underline&quot;&gt;icon-underline&lt;/option&gt;
+    &lt;option value=&quot;icon-link&quot;&gt;icon-link&lt;/option&gt;
+    &lt;option value=&quot;icon-paper-clip&quot;&gt;icon-paper-clip&lt;/option&gt;
+    &lt;option value=&quot;icon-columns&quot;&gt;icon-columns&lt;/option&gt;
+    &lt;option value=&quot;icon-table&quot;&gt;icon-table&lt;/option&gt;
+    &lt;option value=&quot;icon-th-large&quot;&gt;icon-th-large&lt;/option&gt;
+    &lt;option value=&quot;icon-th&quot;&gt;icon-th&lt;/option&gt;
+    &lt;option value=&quot;icon-th-list&quot;&gt;icon-th-list&lt;/option&gt;
+    &lt;option value=&quot;icon-list&quot;&gt;icon-list&lt;/option&gt;
+    &lt;option value=&quot;icon-list-ol&quot;&gt;icon-list-ol&lt;/option&gt;
+    &lt;option value=&quot;icon-list-ul&quot;&gt;icon-list-ul&lt;/option&gt;
+    &lt;option value=&quot;icon-list-alt&quot;&gt;icon-list-alt&lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label=&quot;Directional Icons&quot;&gt;
+    &lt;option value=&quot;icon-angle-left&quot;&gt;icon-angle-left&lt;/option&gt;
+    &lt;option value=&quot;icon-angle-right&quot;&gt;icon-angle-right&lt;/option&gt;
+    &lt;option value=&quot;icon-angle-up&quot;&gt;icon-angle-up&lt;/option&gt;
+    &lt;option value=&quot;icon-angle-down&quot;&gt;icon-angle-down&lt;/option&gt;
+    &lt;option value=&quot;icon-arrow-down&quot;&gt;icon-arrow-down&lt;/option&gt;
+    &lt;option value=&quot;icon-arrow-left&quot;&gt;icon-arrow-left&lt;/option&gt;
+    &lt;option value=&quot;icon-arrow-right&quot;&gt;icon-arrow-right&lt;/option&gt;
+    &lt;option value=&quot;icon-arrow-up&quot;&gt;icon-arrow-up&lt;/option&gt;
+    &lt;option value=&quot;icon-caret-down&quot;&gt;icon-caret-down&lt;/option&gt;
+    &lt;option value=&quot;icon-caret-left&quot;&gt;icon-caret-left&lt;/option&gt;
+    &lt;option value=&quot;icon-caret-right&quot;&gt;icon-caret-right&lt;/option&gt;
+    &lt;option value=&quot;icon-caret-up&quot;&gt;icon-caret-up&lt;/option&gt;
+    &lt;option value=&quot;icon-chevron-down&quot;&gt;icon-chevron-down&lt;/option&gt;
+    &lt;option value=&quot;icon-chevron-left&quot;&gt;icon-chevron-left&lt;/option&gt;
+    &lt;option value=&quot;icon-chevron-right&quot;&gt;icon-chevron-right&lt;/option&gt;
+    &lt;option value=&quot;icon-chevron-up&quot;&gt;icon-chevron-up&lt;/option&gt;
+    &lt;option value=&quot;icon-circle-arrow-down&quot;&gt;icon-circle-arrow-down&lt;/option&gt;
+    &lt;option value=&quot;icon-circle-arrow-left&quot;&gt;icon-circle-arrow-left&lt;/option&gt;
+    &lt;option value=&quot;icon-circle-arrow-right&quot;&gt;icon-circle-arrow-right&lt;/option&gt;
+    &lt;option value=&quot;icon-circle-arrow-up&quot;&gt;icon-circle-arrow-up&lt;/option&gt;
+    &lt;option value=&quot;icon-double-angle-left&quot;&gt;icon-double-angle-left&lt;/option&gt;
+    &lt;option value=&quot;icon-double-angle-right&quot;&gt;icon-double-angle-right&lt;/option&gt;
+    &lt;option value=&quot;icon-double-angle-up&quot;&gt;icon-double-angle-up&lt;/option&gt;
+    &lt;option value=&quot;icon-double-angle-down&quot;&gt;icon-double-angle-down&lt;/option&gt;
+    &lt;option value=&quot;icon-hand-down&quot;&gt;icon-hand-down&lt;/option&gt;
+    &lt;option value=&quot;icon-hand-left&quot;&gt;icon-hand-left&lt;/option&gt;
+    &lt;option value=&quot;icon-hand-right&quot;&gt;icon-hand-right&lt;/option&gt;
+    &lt;option value=&quot;icon-hand-up&quot;&gt;icon-hand-up&lt;/option&gt;
+    &lt;option value=&quot;icon-circle&quot;&gt;icon-circle&lt;/option&gt;
+    &lt;option value=&quot;icon-circle-blank&quot;&gt;icon-circle-blank&lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label=&quot;Video Player Icons&quot;&gt;
+    &lt;option value=&quot;icon-play-circle&quot;&gt;icon-play-circle&lt;/option&gt;
+    &lt;option value=&quot;icon-play&quot;&gt;icon-play&lt;/option&gt;
+    &lt;option value=&quot;icon-pause&quot;&gt;icon-pause&lt;/option&gt;
+    &lt;option value=&quot;icon-stop&quot;&gt;icon-stop&lt;/option&gt;
+    &lt;option value=&quot;icon-step-backward&quot;&gt;icon-step-backward&lt;/option&gt;
+    &lt;option value=&quot;icon-fast-backward&quot;&gt;icon-fast-backward&lt;/option&gt;
+    &lt;option value=&quot;icon-backward&quot;&gt;icon-backward&lt;/option&gt;
+    &lt;option value=&quot;icon-forward&quot;&gt;icon-forward&lt;/option&gt;
+    &lt;option value=&quot;icon-fast-forward&quot;&gt;icon-fast-forward&lt;/option&gt;
+    &lt;option value=&quot;icon-step-forward&quot;&gt;icon-step-forward&lt;/option&gt;
+    &lt;option value=&quot;icon-eject&quot;&gt;icon-eject&lt;/option&gt;
+    &lt;option value=&quot;icon-fullscreen&quot;&gt;icon-fullscreen&lt;/option&gt;
+    &lt;option value=&quot;icon-resize-full&quot;&gt;icon-resize-full&lt;/option&gt;
+    &lt;option value=&quot;icon-resize-small&quot;&gt;icon-resize-small&lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label=&quot;Social Icons&quot;&gt;
+    &lt;option value=&quot;icon-phone&quot;&gt;icon-phone&lt;/option&gt;
+    &lt;option value=&quot;icon-phone-sign&quot;&gt;icon-phone-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-facebook&quot;&gt;icon-facebook&lt;/option&gt;
+    &lt;option value=&quot;icon-facebook-sign&quot;&gt;icon-facebook-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-twitter&quot;&gt;icon-twitter&lt;/option&gt;
+    &lt;option value=&quot;icon-twitter-sign&quot;&gt;icon-twitter-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-github&quot;&gt;icon-github&lt;/option&gt;
+    &lt;option value=&quot;icon-github-alt&quot;&gt;icon-github-alt&lt;/option&gt;
+    &lt;option value=&quot;icon-github-sign&quot;&gt;icon-github-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-linkedin&quot;&gt;icon-linkedin&lt;/option&gt;
+    &lt;option value=&quot;icon-linkedin-sign&quot;&gt;icon-linkedin-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-pinterest&quot;&gt;icon-pinterest&lt;/option&gt;
+    &lt;option value=&quot;icon-pinterest-sign&quot;&gt;icon-pinterest-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-google-plus&quot;&gt;icon-google-plus&lt;/option&gt;
+    &lt;option value=&quot;icon-google-plus-sign&quot;&gt;icon-google-plus-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-sign-blank&quot;&gt;icon-sign-blank&lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label=&quot;Medical Icons&quot;&gt;
+    &lt;option value=&quot;icon-ambulance&quot;&gt;icon-ambulance&lt;/option&gt;
+    &lt;option value=&quot;icon-beaker&quot;&gt;icon-beaker&lt;/option&gt;
+    &lt;option value=&quot;icon-h-sign&quot;&gt;icon-h-sign&lt;/option&gt;
+    &lt;option value=&quot;icon-hospital&quot;&gt;icon-hospital&lt;/option&gt;
+    &lt;option value=&quot;icon-medkit&quot;&gt;icon-medkit&lt;/option&gt;
+    &lt;option value=&quot;icon-plus-sign-alt&quot;&gt;icon-plus-sign-alt&lt;/option&gt;
+    &lt;option value=&quot;icon-stethoscope&quot;&gt;icon-stethoscope&lt;/option&gt;
+    &lt;option value=&quot;icon-user-md&quot;&gt;icon-user-md&lt;/option&gt;
+  &lt;/optgroup&gt;
+&lt;/select&gt;</code></pre>
+
+</div> <!-- article-content -->
+
+<div id="footer-nav-bar">
+<div><a href="Customize-Font-Awesome.html">←prev</a></div><div class="nav-bar-push"><a href="Merge-FontAwesome-with-any-other-font.html">next→</a></div>
+</div>
+
+</div> <!-- article-box -->
+
+</div> <!-- trunk-box -->
+
+<div id="my-footer">
+Copyright to the original creators. I just brought it together.<br/>
+<a href="Font-Awesome-HTML-Dropdown-Select-List.md">Pandoc-Markdown source for this page</a><br/>
+(Docs processed by
+<a href="http://www.unexpected-vortices.com/sw/rippledoc/index.html">Rippledoc</a>.)
+</div> <!-- my-footer -->
+
+</div> <!-- main-outer-box -->
+
+</body>
+</html>
